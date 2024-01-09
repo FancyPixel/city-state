@@ -1,0 +1,166 @@
+---
+:D:
+- Ashdod
+- Ashqelon
+- Bat Hadar
+- Be'er Toviyya
+- Beersheba
+- Dimona
+- Eilat
+- Emunim
+- Hazav
+- Hazor Ashdod
+- Magen
+- Netivot
+- Nirim
+- Ofaqim
+- Qiryat Gat
+- Qiryat Mal'akhi
+- Sde Boker
+- Sderot
+- Shetulim
+- Shoval
+- Urim
+- "`Arugot"
+- "`En HaShelosha"
+:HA:
+- Bet Oren
+- Binyamina
+- HaKarmel
+- Hadera
+- Haifa
+- Karkur
+- Ma`agan Mikha'el
+- Nesher
+- Or `Aqiva
+- Pardes Hanna Karkur
+- Qiryat Ata
+- Qiryat Bialik
+- Qiryat Hayyim
+- Qiryat Motzkin
+- Qiryat Tiv`on
+- Qiryat Yam
+- Sedot Yam
+- Tirat Karmel
+- "`En Ayyala"
+:JM:
+- Bet Shemesh
+- Jerusalem
+- Mesillat Ziyyon
+- Naham
+:M:
+- Ahituv
+- Bahan
+- Bareqet
+- Bat Hefer
+- Ben Shemen-Kefar Hano`ar
+- Bene Ziyyon
+- Bet Dagan
+- Elyakhin
+- Et Taiyiba
+- Even Yehuda
+- Gan Hayyim
+- Gan Yavne
+- Ganne Tiqwa
+- Gedera
+- Gibbeton
+- Gimzo
+- Giv`at Hayyim
+- Hadar Ramatayim
+- Hadar `Am
+- Hadid
+- Herut
+- Hod HaSharon
+- Kadima
+- Kefar Daniyyel
+- Kefar HaNagid
+- Kefar Netter
+- Kefar Witqin
+- Kefar Yona
+- Kfar Saba
+- Lod
+- Mazkeret Batya
+- Mazliah
+- Mazor
+- Mikhmoret
+- Modiin
+- Ness Ziona
+- Netanya
+- Newe Yamin
+- Nir Zevi
+- Nordiyya
+- Pardesiyya
+- Petah Tikwah
+- Ra'anana
+- Ramat Poleg
+- Ramla
+- Rehovot
+- Rinnatya
+- Rishon LeZion
+- Rishpon
+- Rosh Ha'Ayin
+- Savyon
+- Sde Warburg
+- Shefayim
+- Talme Menashe
+- Tel Mond
+- Tirat Yehuda
+- Yaqum
+- Yavne
+- Yehud
+- Zoran
+- "`Aseret"
+:TA:
+- Azor
+- Bat Yam
+- Herzliya
+- Holon
+- Jaffa
+- Newe Efrayim
+- Or Yehuda
+- Qiryat Ono
+- Ramat Aviv
+- Ramat Ef`al
+- Ramat Gan
+- Ramat HaSharon
+- Tel Aviv
+:Z:
+- Acre
+- Afiqim
+- Allonim
+- Baraq
+- Bet Alfa
+- Bet She'an
+- Biriyya
+- Dabburiya
+- Elyaqim
+- Ginnosar
+- Haluz
+- Hazor HaGelilit
+- Hever
+- Hurfeish
+- Karmi'el
+- Liman
+- Maghar
+- Migdal
+- Misgav Regional Council
+- Mizpe Netofa
+- Moran
+- Nahariya
+- Nazareth
+- Nazerat `Illit
+- Pasuta
+- Ramat Dawid
+- Ramat Yishay
+- Ramot Naftali
+- Safed
+- Sarid
+- Shamir
+- Shave Ziyyon
+- Shelomi
+- Tiberias
+- Timrat
+- "`Alma"
+- "`Amir"
+- "`Evron"
+- maalot Tarshiha

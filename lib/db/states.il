@@ -1,0 +1,7 @@
+---
+:D: Southern District
+:HA: Haifa
+:JM: Jerusalem
+:M: Central District
+:TA: Tel Aviv
+:Z: Northern District
