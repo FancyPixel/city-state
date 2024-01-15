@@ -254,7 +254,7 @@ module CS
     # load the country file
     if @cities_prov[country].blank?
       cities_prov_fn = File.join(FILES_FOLDER, "cities_prov.#{country.to_s.downcase}")
-      self.install(country) if ! File.exists? cities_prov_fn
+      self.install(country) if ! File.exist? cities_prov_fn
       @cities_prov[country] = YAML::load_file(cities_prov_fn).symbolize_keys
     end
 
