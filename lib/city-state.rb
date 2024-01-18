@@ -258,7 +258,7 @@ module CS
       @cities_prov[country] = YAML::load_file(cities_prov_fn).symbolize_keys
     end
 
-    @cities_prov[country][province.to_s.upcase.to_sym] || []
+    @cities_prov[country][province.to_s.upcase.to_sym] || {}
   end
 
   def self.set_cities_lookup_file(filename)
