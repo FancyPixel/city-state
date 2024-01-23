@@ -247,7 +247,6 @@ module CS
   end
 
   def self.cities_prov(province, country = nil)
-    puts("cities_prov")
     self.current_country = country if country.present? # set as current_country
     country = self.current_country
 
@@ -331,6 +330,8 @@ module CS
   end
 
   def self.provinces(country)
+    return {} if country.nil?
+
     self.current_country = country # set as current_country
     country = self.current_country # normalized
 
