@@ -335,17 +335,10 @@ module CS
     self.current_country = country # set as current_country
     country = self.current_country # normalized
 
-    # load the country file
-    # if @provinces[country].blank?
-    #   provinces_fn = File.join(FILES_FOLDER, "provinces.#{country.to_s.downcase}")
-    #   self.install(country) if ! File.exists? provinces_fn
-    #   @provinces[country] = YAML::load_file(provinces_fn).symbolize_keys
-    # end
-
     if self.blank?(@provinces[country])
       provinces_fn = File.join(FILES_FOLDER, "provinces.#{country.to_s.downcase}")
       self.install(country) if ! File.exist? provinces_fn
-      @provinces[country] = self.symbolize_keys(YAML::load_file(provinces_fn))
+      @provinces[country] = self.symbolize_keys(YAML::load_file(provinces_fn)) rescue {}
 
       # Process lookup table
       lookup = get_provinces_lookup(country)
