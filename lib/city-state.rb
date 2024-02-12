@@ -226,7 +226,7 @@ module CS
     # load the country file
     if self.blank?(@cities[country])
       cities_fn = File.join(FILES_FOLDER, "cities.#{country.to_s.downcase}")
-      self.install(country) if ! File.exist? cities_fn
+      self.install(country) unless File.exist?(cities_fn)
       @cities[country] = self.symbolize_keys(YAML::load_file(cities_fn))
 
       # Remove duplicated cities
@@ -235,21 +235,23 @@ module CS
       end
 
       # Process lookup table
-      lookup = get_cities_lookup(country, state)
-      if ! lookup.nil?
-        lookup.each do |old_value, new_value|
-          if new_value.nil? || self.blank?(new_value)
-            @cities[country][state].delete(old_value)
-          else
-            index = @cities[country][state].index(old_value)
-            if index.nil?
-              @cities[country][state][] = new_value
+      lookup = get_cities_lookup(country)
+      unless lookup.nil?
+        lookup.each do |state, replacements|
+          replacements.each do |old_value, new_value|
+            if new_value.nil? || self.blank?(new_value)
+              @cities[country][state].delete(old_value)
             else
-              @cities[country][state][index] = new_value
+              index = @cities[country][state].index(old_value)
+              if index.nil?
+                @cities[country][state][] = new_value
+              else
+                @cities[country][state][index] = new_value
+              end
             end
           end
+          @cities[country][state] = @cities[country][state].sort # sort it alphabetically
         end
-        @cities[country][state] = @cities[country][state].sort # sort it alphabetically
       end
     end
 
@@ -286,7 +288,7 @@ module CS
     @countries_lookup    = nil
   end
 
-  def self.get_cities_lookup(country, state)
+  def self.get_cities_lookup(country)
     # lookup file not loaded
     if @cities_lookup.nil?
       @cities_lookup_fn  = DEFAULT_CITIES_LOOKUP_FN if @cities_lookup_fn.nil?
@@ -296,8 +298,8 @@ module CS
       @cities_lookup.each { |key, value| @cities_lookup[key] = self.symbolize_keys(value) } # force states to be symbols
     end
 
-    return nil if ! @cities_lookup.key?(country) || ! @cities_lookup[country].key?(state)
-    @cities_lookup[country][state]
+    return nil unless @cities_lookup.key?(country)
+    @cities_lookup[country]
   end
 
   def self.get_prov_state_lookup(state)
