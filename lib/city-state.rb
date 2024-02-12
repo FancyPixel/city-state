@@ -164,7 +164,6 @@ module CS
       cities_prov = Hash[cities_prov.sort]
       provinces = Hash[provinces.sort]
       prov_state = Hash[prov_state.sort]
-      p prov_state
       unless country == "IT"
         cities_prov.each { |k, v| cities_prov[k].sort! }
       else
@@ -383,7 +382,6 @@ module CS
       end
     end
 
-    # p @prov_state
     # Return list
     @prov_state[state] || {}
   end
